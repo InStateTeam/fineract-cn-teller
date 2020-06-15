@@ -33,7 +33,6 @@ jobs:
       - name: Build Docker image and push
         uses: docker/build-push-action@v1
         with:
-          path: ./instate-fineract-corda-bridge/
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
