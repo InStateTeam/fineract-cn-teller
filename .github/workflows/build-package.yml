@@ -24,7 +24,7 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-grdl
       - name: Build with Gradle
-        run: ./gradlew publishToMavenLocal
+        run: ./gradlew publishServiceToMavenLocal
       - name: Upload jar
         uses: actions/upload-artifact@v1
         with:
